@@ -79,39 +79,40 @@ CIRCUIT DIAGRAM
 
 
 ### PROGRAM :
- #include<Servo.h>
-
-Servo s1;
-
-int pos=0;
-
-void setup()
-{
-  s1.attach(9);
-  Serial.begin(9600);
-  
-}
-
-void loop()
-{
-  for (pos=0;pos<=180;pos+=1)
-  {
-    s1.write(pos);
-    delay(15);
-    //Serial.print("Angle=");
-    Serial.println(pos);
-    
-  }
-  for (pos=180;pos>=1;pos-=1)
-  {
-    s1.write(pos);
-    delay(15);
-    //Serial.print("Angle=");
-    
-    
-  }
-}
-
+'''
+       #include<Servo.h>
+      
+      Servo s1;
+      
+      int pos=0;
+      
+      void setup()
+      {
+        s1.attach(9);
+        Serial.begin(9600);
+        
+      }
+     
+     void loop()
+     {
+       for (pos=0;pos<=180;pos+=1)
+       {
+         s1.write(pos);
+         delay(15);
+         //Serial.print("Angle=");
+         Serial.println(pos);
+         
+     }
+     for (pos=180;pos>=1;pos-=1)
+     {
+       s1.write(pos);
+       delay(15);
+       //Serial.print("Angle=");
+       
+       
+     }
+   }
+'''
 
 
 
